@@ -2,5 +2,13 @@ nav{
   background-color: lightgreen;
 }
 footer{
-  text-align: center;
-}
+  /* background-Color: #F8F8F8;
+  border-Top: 1px solid #E7E7E7; */
+  text-Align: center;
+  /* padding: 20px,
+  position
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100% */
+};

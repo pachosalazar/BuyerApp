@@ -1,10 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component, Redirect, Link} from 'react';
 import CarouselMain from './Carousel';
 import { Jumbotron,Container, Row, Col, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button} from 'reactstrap';
 
 
 class MainArea extends Component {
+
+
+    Clothing() {
+        console.log("clothing btn work");
+        //ready for code
+        <Link to="./Pages/Clothing"></Link>
+
+       };
+  
+   Toys() {
+        // console.log("Toys btn work");
+         //ready for code
+         
+       };   
+       
+    Home() {
+        // console.log("Home btn work");
+         //ready for code
+
+       };  
 
 render() {
     return (
@@ -22,7 +42,8 @@ render() {
                 <CardTitle><h1>Clothe</h1></CardTitle>
                 
                 <h4>the best that tou can find in outfits</h4>
-                <Button>Let's Go!!</Button>
+              
+                 <Button href="/clothing">Let's Go!!</Button>
                 </CardBody>
             </Card>
             </Col> 
@@ -33,7 +54,7 @@ render() {
                 <CardTitle><h1>Toys</h1></CardTitle>
                 
                 <h4>Ready to play we have he best</h4>
-                <Button>Let's Go!!</Button>
+                <Button onClick={this.Toys}>Let's Go!!</Button>
                 </CardBody>
             </Card>
             </Col> 
@@ -44,7 +65,9 @@ render() {
                 <CardTitle><h1>home</h1></CardTitle>
                 
                 <h4>Moder or Classic make your place home</h4>
-                <Button>Let's Go!!</Button>
+                
+                <Button onClick={this.Home}>Let's Go!!</Button>
+             
                 </CardBody>
             </Card>
             </Col> 

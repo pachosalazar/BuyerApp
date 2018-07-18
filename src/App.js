@@ -1,48 +1,33 @@
 import React, { Component } from 'react';
-import Nav from './components/Nav';
-import { DB_Config } from './components/DB';
-import CarouselMain from './components/Carousel';
-import './App.css';
-import MainArea from './components/MainArea';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+// import { DB_Config } from './components/DB';
+import Home from "./components/Pages/Home";
+import Clothing from "./components/Pages/Clothing"
+// import fire from './fire';
+import NavMain from "./components/NavMain"
+import Footer from "./components/Footer"
 import { Button,Container, Row, Col } from 'reactstrap';
+
+
 
 
 
 class App extends Component {
 
-componentWillMount(){
-  this.ItemRef = base.syncState('Item',{
-    context: this,
-    state: 'Item'
-  });
-}
-componentWillUnmount(){
-  base.removeBinding(this.ItemRef);
-}
 
 
 render() {
     return (
-      <div className="App">
-          <Nav/>
-          
-       <Container>
-         
-          <MainArea/>
-          
+    <Router>
+      <div>
+      <NavMain/> 
         
-      
-      </Container>
-
-      <footer>
-        <div className="container">
-            &copy;Copyright 2018 Jaime F Salazar
-        </div>
-    </footer>
-    
+          <Route exact path="/" component={Home} />   
+          <Route exact path="/Clothing" component={Clothing} /> 
+        
+      <Footer />
       </div>
-
+    </Router>               
     );
   }
 }
