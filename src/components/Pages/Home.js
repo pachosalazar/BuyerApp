@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NavMain from '../NavMain';
+
 // import { DB_Config } from './components/DB';
 import '../../App.css';
 import MainArea from '../MainArea';
-import Footer from "../Footer"
+
 // import fire from './fire';
 // import {BrowserRouter as Router,Link,Route, Switch } from 'react-router-dom';
 

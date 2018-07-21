@@ -39,7 +39,7 @@ render() {
             <Card>
                 <CardImg top width="100%" src="https://1843magazine.static-economist.com/sites/default/files/201612_FT_BAL_12-WEB.jpg" alt="Card image cap" />
                 <CardBody>
-                <CardTitle><h1>Clothe</h1></CardTitle>
+                <CardTitle><h1>Clothes</h1></CardTitle>
                 
                 <h4>the best that tou can find in outfits</h4>
               
