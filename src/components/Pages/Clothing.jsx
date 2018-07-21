@@ -47,8 +47,8 @@ export default class Clothing extends React.Component {
         <Crd 
           image={item.img}
           title1={item.type} 
-          title={item.color} 
-          subTitle={item.size}
+          title={`Color: ${item.color}`}
+          subTitle={`Size: ${item.size}`}
           subTitle2={`Price: ${item.price}`}
 
         /> 

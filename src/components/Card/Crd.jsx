@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Card,CardImg,CardBody, CardTitle,CardSubtitle,CardText,Button,Col} from 'reactstrap';
 import './Card.css'
+
 export default class extends Component {
 render() {
     return (

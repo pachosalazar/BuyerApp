@@ -20,8 +20,9 @@ render() {
     return (
     <Router>
       <div>
-      <NavMain/> 
         
+      <NavMain/> 
+      
           <Route exact path="/" component={Home} />   
           <Route exact path="/Clothing" component={Clothing} /> 
         
