@@ -9,7 +9,7 @@ import {
 
 const items = [
   {
-    src: 'https://cdn.recommend.com/wp-content/uploads/2017/07/Palacio-de-la-Cultura-%E2%80%93-Plaza-Botero.jpg',
+    src: 'https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },

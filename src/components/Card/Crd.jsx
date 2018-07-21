@@ -8,12 +8,13 @@ render() {
       // <div>
 
 
-        <Col sm="4">
+        <Col sm={4}>
          <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+        <CardImg top width="100%" src={this.props.image} alt="Card image cap" />
         <CardBody>
+          <CardTitle>{this.props.title1}</CardTitle>
           <CardTitle>{this.props.title}</CardTitle>
-          <CardSubtitle>{this.props.subTitle}</CardSubtitle>
+          <CardSubtitle>{this.props.subTitle}  {this.props.subTitle2}</CardSubtitle>
           <CardText>{this.props.cardText}</CardText>
           <Button>Button</Button>
         </CardBody>

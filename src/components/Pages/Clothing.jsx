@@ -8,7 +8,7 @@ import Crd from '../Card/Crd'
 
 export default class Clothing extends React.Component {
   state = {
-    // clothes: []
+    clothes: []
   }
   componentDidMount() {
     let clothesRef = fire.database().ref('clothes');
@@ -43,12 +43,16 @@ export default class Clothing extends React.Component {
          /> 
         
     ))} */}
-    {/* {this.state.map((item, index) =>  
+    {this.state.clothes.map((item, index) =>  
         <Crd 
+          image={item.img}
+          title1={item.type} 
           title={item.color} 
-          subTitle={item.size} 
+          subTitle={item.size}
+          subTitle2={`Price: ${item.price}`}
+
         /> 
-    )} */}
+    )}
 
         </Container>
       </div>
