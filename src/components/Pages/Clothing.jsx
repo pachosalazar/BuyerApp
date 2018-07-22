@@ -14,35 +14,37 @@ export default class Clothing extends React.Component {
     let clothesRef = fire.database().ref('clothes');
     clothesRef.once('value')
       .then(snapshot => {
+         
+        // let items = snapshot.val();
+        // let newState = [];
+        // for (let clothes in items) {
+        //   newState.push({
+        //     id: clothes,
+        //     img=items[clothes].img,
+        //     type=items[clothes].type,
+        //     color=items[clothes].color,
+        //     size=items[clothes].size,
+        //     price=items[clothes].price
+        //   });
+        // }
 
-        // console.log(Object.values(snapshot.val()));
 
-        // this.setState(Object.values(snapshot.val()));
-      //   this.setState({ 'clothes': [...snapshot.val()] 
-      // });
-      // this.setState({ 'clothes': [Object.values(snapshot.val())] });
       this.setState({ 'clothes': Object.values(snapshot.val()) });
       console.log(this.state);
-        // console.log('state: ', this.state);
-        
+    //  firebase.database().ref('buyer-3ad89').set(
+    //    {
+    //      type: 'polos',
+    //      size: 'L'
+    //    }
+    //  )
       })
-
   }
-//["0"].color
-//{state["0"].color}
+
   render() {
     return (
       <div>
         <Container>
-        {/* {this.state.map((index,c)  =>(
-        <Crd 
-        
-         title={c.color} 
-         subTitle={c.size} 
-      
-         /> 
-        
-    ))} */}
+       
     {this.state.clothes.map((item, index) =>  
         <Crd 
           image={item.img}
@@ -51,11 +53,12 @@ export default class Clothing extends React.Component {
           subTitle={`Size: ${item.size}`}
           subTitle2={`Price: ${item.price}`}
 
-        /> 
-    )}
+          /> 
+        )}
 
         </Container>
       </div>
     );
+   
   }
 }

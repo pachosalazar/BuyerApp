@@ -31,7 +31,7 @@ export default class NavMain extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/" ><img src={process.env.PUBLIC_URL + '/imgs/logo.png'} style={{width:100, marginTop: -7}} /></NavbarBrand>
+          <NavbarBrand id="logo "href="/" ><img src={process.env.PUBLIC_URL + '/imgs/logo.png'} style={{width:100, marginTop: 10}} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
