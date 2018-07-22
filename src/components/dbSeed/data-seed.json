@@ -1,27 +1,23 @@
 
 {
-    "clothes" : {
-      "pants" : {
-        "img":"",
-        "type": "Pants and jeans",
-        "color": "red",
-        "size": "xl",
-        "price": "$ 32" 
-      },
-      "pants" : {
-        "img":"",
-        "type": "Pants and jeans",
-        "color": "red",
-        "size": "xl",
-        "price": "$ 32" 
-      },
-      "pants" : {
-        "img":"",
-        "type": "Pants and jeans",
-        "color": "red",
-        "size": "xl",
-        "price": "$ 32" 
-      }
+    "clothes" : [
+     {"pants" : [{
+          
+          "img":"",
+          "type": "Pants and jeans",
+          "color": "red",
+          "size": "xl",
+          "price": "$ 32",
+     }]},
 
+     {"pants" :[ {
+          "img":"",
+          "type": "Pants and jeans",
+          "color": "red",
+          "size": "xl",
+          "price": "$ 32" 
+        }]}
+         
+    ]
     }
-  }
+  

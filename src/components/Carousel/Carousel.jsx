@@ -10,18 +10,24 @@ import {
 const items = [
   {
     src: 'https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'slide 1',
+    header: 'Fast and easy',
+    caption: 'All that you want to your home'
+    
   },
   {
-    src: 'https://www.twoscotsabroad.com/wp-content/uploads/2015/06/Things-to-do-in-Medellin-Colombia_.jpg',
+    url: './img1.png',
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    header: 'it work',
+    caption: 'Fast and easy'
+    
   },
   {
     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_09smq3CR1a9s68U3oh3Zrh3HshQBFbhsW3TW3u_gW0xCn59',
     altText: 'Slide 3',
+    header: 'it work',
     caption: 'Best of the bes'
+    
   }
 ];
 
@@ -71,8 +77,8 @@ class CarouselMain extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <img id="carru" src={item.src} alt={item.altText} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.header} />
         </CarouselItem>
       );
     });
