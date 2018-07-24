@@ -1,8 +1,10 @@
 import React, { Component, Redirect, Link} from 'react';
 import CarouselMain from './Carousel/Carousel.jsx';
+
 import { Jumbotron,Container, Row, Col, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button} from 'reactstrap';
 
+import Login from './login/Login.jsx';
 
 class MainArea extends Component {
 
@@ -33,6 +35,7 @@ render() {
          <Container>
            <Jumbotron>   
            <CarouselMain/>
+           <Login/>
            <br/>
             <Row>
             <Col sm="4">
@@ -54,7 +57,7 @@ render() {
                 <CardTitle><h2>Toys</h2></CardTitle>
                 
                 <h4>Ready to play we have he best</h4>
-                <Button onClick={this.Toys}>Let's Go!!</Button>
+                <Button href="/toys">Let's Go!!</Button>
                 </CardBody>
             </Card>
             </Col> 
@@ -62,11 +65,11 @@ render() {
             <Card>
                 <CardImg top width="100%" src="http://decoholic.org/wp-content/uploads/2017/08/2017-fall-home-decor-trends-1.jpg" alt="Card image cap" />
                 <CardBody>
-                <CardTitle><h2>home</h2></CardTitle>
+                <CardTitle><h2>Home</h2></CardTitle>
                 
                 <h4>Moder or Classic make your place home</h4>
                 
-                <Button onClick={this.Home}>Let's Go!!</Button>
+                <Button href="/remo">Let's Go!!</Button>
              
                 </CardBody>
             </Card>

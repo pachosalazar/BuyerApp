@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Button,Container, Row, Col } from 'reactstrap';
 import {
   Collapse,
   Navbar,
@@ -36,12 +36,17 @@ export default class NavMain extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="./Pages/Clothing.jsx">Clothing</NavLink>
+                <NavLink href="./Clothing">Clothing</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.aliexpress.com/">aliexpress</NavLink>
+                <NavLink href="./Toys">Toys</NavLink>
               </NavItem>
-              
+              <NavItem>
+                <NavLink href="./Remo">Remo</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink ><span class="glyphicon glyphicon-shopping-cart"></span>Cart ({this.props.count})</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

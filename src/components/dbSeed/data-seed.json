@@ -1,23 +1,24 @@
 
+
 {
-    "clothes" : [
-     {"pants" : [{
+    "clothes" : [{
+     "pants" : {
           
           "img":"",
           "type": "Pants and jeans",
           "color": "red",
           "size": "xl",
-          "price": "$ 32",
-     }]},
+          "price": "$ 32"
+     }},
 
-     {"pants" :[ {
+     {"pants1" : {
           "img":"",
           "type": "Pants and jeans",
           "color": "red",
           "size": "xl",
           "price": "$ 32" 
-        }]}
+        }}
          
-    ]
+     ]
     }
   

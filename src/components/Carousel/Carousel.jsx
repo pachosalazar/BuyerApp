@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Carousel.css';
 import {
   Carousel,
   CarouselItem,
@@ -16,17 +17,17 @@ const items = [
     
   },
   {
-    url: './img1.png',
+    src: 'https://searchengineland.com/figz/wp-content/seloads/2015/05/ecommerce-shopping-retail-ss-1920-800x450.jpg',
     altText: 'Slide 2',
-    header: 'it work',
+    header: 'Best way to shop',
     caption: 'Fast and easy'
     
   },
   {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_09smq3CR1a9s68U3oh3Zrh3HshQBFbhsW3TW3u_gW0xCn59',
+    src: 'https://i.ytimg.com/vi/NUXHhiPqzzE/maxresdefault.jpg',
     altText: 'Slide 3',
-    header: 'it work',
-    caption: 'Best of the bes'
+    header: 'You want it you have it',
+    caption: 'Best of the best'
     
   }
 ];
@@ -77,7 +78,7 @@ class CarouselMain extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img id="carru" src={item.src} alt={item.altText} />
+          <img className="carru" src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.header} />
         </CarouselItem>
       );

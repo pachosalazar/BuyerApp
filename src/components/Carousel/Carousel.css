@@ -1,2 +1,4 @@
-#carru{width: 600px;
-height: 600px;};
+img.carru{
+    width: 100%;
+    height: 400px;
+}
