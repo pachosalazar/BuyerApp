@@ -10,6 +10,7 @@ import Remo from "./components/Pages/Remo"
 import NavMain from "./components/NavMain"
 import Footer from "./components/Footer"
 import { Button,Container, Row, Col } from 'reactstrap';
+import Cart from './components/Pages/Cart';
 
 
 
@@ -55,7 +56,7 @@ render() {
           <Route exact path="/Clothing" component={Clothing} /> 
           <Route exact path="/Toys" component={Toys} /> 
           <Route exact path="/Remo" component={Remo} /> 
-          <Route exact path="/Cart"  /> 
+          <Route exact path="/Cart"  component={Cart}/> 
       <Footer />
       </div>
       {/* end switch? */}

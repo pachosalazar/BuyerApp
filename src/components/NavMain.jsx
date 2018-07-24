@@ -12,7 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-
+  import Login from './login/Login.jsx';
 export default class NavMain extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +35,7 @@ export default class NavMain extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+            <Login/>
               <NavItem>
                 <NavLink href="./Clothing">Clothing</NavLink>
               </NavItem>
@@ -45,7 +46,7 @@ export default class NavMain extends React.Component {
                 <NavLink href="./Remo">Remo</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink ><span class="glyphicon glyphicon-shopping-cart"></span>Cart ({this.props.count})</NavLink>
+                <NavLink href="./cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart ({this.props.count})</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

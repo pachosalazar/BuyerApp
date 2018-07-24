@@ -10,7 +10,7 @@ import {
 
 const items = [
   {
-    src: 'https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg',
+    src: 'https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg' ,
     altText: 'slide 1',
     header: 'Fast and easy',
     caption: 'All that you want to your home'

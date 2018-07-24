@@ -4,7 +4,7 @@ import CarouselMain from './Carousel/Carousel.jsx';
 import { Jumbotron,Container, Row, Col, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button} from 'reactstrap';
 
-import Login from './login/Login.jsx';
+
 
 class MainArea extends Component {
 
@@ -35,7 +35,7 @@ render() {
          <Container>
            <Jumbotron>   
            <CarouselMain/>
-           <Login/>
+          
            <br/>
             <Row>
             <Col sm="4">
@@ -67,6 +67,7 @@ render() {
                 <CardBody>
                 <CardTitle><h2>Home</h2></CardTitle>
                 
+
                 <h4>Moder or Classic make your place home</h4>
                 
                 <Button href="/remo">Let's Go!!</Button>
